@@ -36,9 +36,17 @@
    &kp  ESC  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT                                    &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR  &trans
    &kp LCTRL &trans    &trans  &trans    &trans    &kp MINUS                                    &kp EQUAL &kp LBKT  &kp RBKT        &kp PIPE &kp GRAVE &trans
    &kp LSHFT &trans    &trans  &trans    &trans    &trans                                       &trans    &trans    &trans          &trans   &kp BSLH  &kp TILDE
-                                   &kp LGUI &trans &kp SPACE                                    &kp DEL   &trans &trans
+                                   &kp LGUI &trans &kp SPACE                                    &kp DEL   &to 3 &trans
                         >;
                 };
 
+                GAME {
+                        bindings = <
+   &kp ESC      &kp Q           &kp W        &kp E        &kp R        &kp T                    &kp Y    &kp U    &kp I         &kp O     &kp P    &kp ESC
+   &kp TAB      &kp A           &kp S        &kp D        &kp F        &kp G                    &kp H    &kp J    &kp K         &kp L     &kp SQT  &kp SEMI
+   &kp LCTRL    &kp N1          &kp N2       &kp N3       &kp N4       &kp N5                   &kp N    &kp M    &kp COMMA     &kp DOT   &kp FSLH &kp END
+                                        &none         &kp SPACE    &kp LSHFT                &kp BSPC        &trans          &to 0
+                        >;
+                };
         };
 };
